@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRAPPO</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap">
+    
+    <!-- TailwindCSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-[#0D0D2B] font-['Rubik']">
+
+    <header class="text-white flex flex-row items-center justify-between mx-8 sm:mx-9 my-8 md:my-12 md:mx-14 lg:mx-16">
+        <div class="flex items-center">
+            <img src="images/Logo.svg" alt="">
+            <span class="ml-2 text-xl font-medium">CRAPPO</span>
+        </div>
+        <nav class="hidden md:flex items-center">
+            <ul class="flex sm:space-x-4 space-x-6">
+                <li>Products</li>
+                <li>Features</li>
+                <li>About</li>
+                <li>Contact</li>
+                <li class="px-2 pr-5 border-r-2 border-zinc-600">Login</li>
+            </ul>
+            <button class="sm:ml-3 ml-5 bg-[#3671E9] h-fit px-8 sm:px-6 py-3 sm:py-2 rounded-full">Register</button>
+        </nav>
+        <img class="md:hidden" src="images/icon_menu.svg" alt="">
+    </header>
+
+    <main>
+        <!-- hero -->
+        <section class="mx-8 sm:mx-9 my-8 md:my-12 md:mx-14 lg:mx-16 md:flex-row-reverse">
+            <div>
+                <img class="w-4/5 mx-auto" src="images/hero_image.svg" alt="">
+            </div>
+            <div class="text-white">
+                <p class="text-white bg-[#ffffff18] w-fit pr-3 pl-2 py-2 my-5 rounded-full"><span class="bg-white rounded-full text-[#0D0D2B] px-2 py-1 mr-3 font-medium">75% SAVE</span>For the Black Friday weekend</p>
+                <h1 class="text-5xl font-bold">Fastest and secure platform to invest in crypto</h1>
+                <p class="my-5">Buy and sell cryptocurrencies, trusted by 10M wallets with over $30 billion in transactions.</p>
+                <button class="flex items-center bg-[#3671E9] rounded-full px-5 py-3">Try for FREE<span class="flex items-center justify-center bg-white rounded-full w-5 h-5 ml-2"><img src="images/arrow-right.svg" alt=""></span></button>
+            </div>
+        </section>
+
+        <!-- about -->
+        <section class="mx-8 sm:mx-9 my-8 md:my-12 md:mx-14 lg:mx-16">
+            <!-- stats -->
+            <div class="text-white my-12 space-y-10">
+                <div class="flex items-center my-3">
+                    <img src="images/chart_icon.svg" alt="">
+                    <div class="ml-4">
+                        <h4 class="text-3xl font-semibold">$30B</h4>
+                        <p>Digital Currency Exchanged</p>
+                    </div>
+                </div>
+                <div class="flex items-center my-3">
+                    <img src="images/user-icon.svg" alt="">
+                    <div class="ml-4">
+                        <h4 class="text-3xl font-semibold">10M+</h4>
+                        <p>Trusted Wallets Investor</p>
+                    </div>
+                </div>
+                <div class="flex items-center my-3">
+                    <img src="images/earth_icon.svg" alt="">
+                    <div class="ml-4">
+                        <h4 class="text-3xl font-semibold">195</h4>
+                        <p>Countries Supported</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- why you should use crappo -->
+            <div class="text-white">
+                <img class="w-4/5 mx-auto" src="images/why_image.svg" alt="">
+                <div>
+                    <h2 class="text-4xl font-semibold leading-snug">Why you should use CRAPPO</h2>
+                    <p>Experience the next generation cryptocurrency platform. No financial borders, extra fees, and fake reviews.</p>
+                    <button class="bg-[#3671E9] rounded-full px-6 py-3 my-5">Learn More</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- check how much you can earn-->
+        <section class="mx-8 sm:mx-9 my-8 md:my-12 md:mx-14 lg:mx-16">
+            <h1>Check how much you can earn</h1>
+            <p>Let's check your hash rate to see how much you will earn today, Exercitation veniam consequat sunt nostrud amet.</p>
+            <form action="">
+                <div>
+                    <input type="number" name="hashRate" placeholder="Enter your hash  rate">
+                    <select name="selectHashRate" id="">
+                        <option value="">TH/s</option>
+                        <option value="">H/s</option>
+                        <option value="">KH/s</option>
+                        <option value="">MH/s</option>
+                        <option value="">GH/s</option>
+                    </select>
+                    <button>Calculate</button>
+                </div>
+                <div>
+                    <h4>ESTIMATED 24 HOUR REVENUE:</h4>
+                    <h1>0.055 130 59 ETH <span>($1275)</span></h1>
+                    <p>Revenue will chage based on mining difficulty and Ethereum price.</p>
+                </div>
+            </form>
+
+            <div>
+                <h1>Trade securely and market the high growth cryptocurrencies.</h1>
+                <div>
+                    <img src="images/logo_bitcoin.svg" alt="">
+                    <h2>Bitcoin<sup>BTC</sup></h2>
+                    <p>Digital currency in which a record of transactions is maintained.</p>
+                    <button>Start mining<span><img src="images/arrow-right.svg" alt=""></span></button>
+                </div>
+                <div>
+                    <img src="images/logo_ethereum.svg" alt="">
+                    <h2>Ethereum<sup>ETH</sup></h2>
+                    <p>Blockchain technology to  create and run decentralized digital applications.</p>
+                    <button>Start mining<span><img src="images/arrow-right.svg" alt=""></span></button>
+                </div>
+                <div>
+                    <img src="images/logo_litecoin.svg" alt="">
+                    <h2>Litecoin<sup>LTC</sup></h2>
+                    <p>Cryptocurrency that enables instant payment to anyone in the world.</p>
+                    <button>Start mining<span><img src="images/arrow-right.svg" alt=""></span></button>
+                </div>
+            </div>
+        </section>
+
+        <!-- features -->
+        <section>
+            <h1>Market sentiments, portfolio, and run the infrastructure of your choice</h1>
+            <div>
+                <div>
+                    <img src="" alt="">
+                    <h2>Invest Smart</h2>
+                    <p>et full statistic information aout the behaviour of buyers and sellers will help you make the decision.</p>
+                    <button>Learn More</button>
+                </div>
+                <div>
+                    <img src="" alt="">
+                    <h2>Detailed Statistics</h2>
+                    <p>View all mining related infromation in realtime, at any point at any location and decide which polls you want to mine in.</p>
+                    <button>Learn More</button>
+                </div>
+                <div>
+                    <img src="" alt="">
+                    <h2>Grow your profit and track your investments</h2>
+                    <p>Use advanced analytical tools. Clear TradingView charts letyou track current and historical profit investments.</p>
+                    <button>Learn More</button>
+                </div>
+        </section>
+
+        <!-- subscription -->
+        <form>
+            <div>
+                <h1>Start mining now</h1>
+                <p>Join now with CRAPPO to get the latest news and start mining now</p>
+            </div>
+            <div>
+                <input type="email" name="" id="">
+                <button>Subscribe</button>
+            </div>
+        </form>
+    </main>
+
+    <footer>
+        <section>
+            <div>
+                <img src="images/Logo.svg">
+                <span>CRAPPO</span>
+            </div>
+            <div>
+                <ul>
+                    <li>Quick Link</li>
+                    <li>Home</li>
+                    <li>Products</li>
+                    <li>About</li>
+                    <li>Features</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li>Resources</li>
+                    <li>Download Whitepaper</li>
+                    <li>Smart token</li>
+                    <li>Blockchain Explorer</li>
+                    <li>Crypto API</li>
+                    <li>Interest</li>
+                </ul>
+            </div>
+            <div>
+                <h2>We accept the following payment systems</h2>
+                <div>
+                    <img src="images/logo_visa.svg" alt="">
+                    <img src="images/logo_mastercard.svg" alt="">
+                    <img src="images/logo_bitcoin_white.svg" alt="">
+                </div>
+            </div>
+        </section>
+        <section>
+
+            <p>&copy;2021 CRAPPO. All rights reserved</p>
+
+            <ul>
+                <li>
+                    <img src="images/logo_facebook.svg" alt="">
+                </li>
+                <li>
+                    <img src="images/logo_instagram.svg" alt="">
+                </li>
+                <li>
+                    <img src="images/logo_youtube.svg" alt="">
+                </li>
+                <li>
+                    <img src="images/logo_twitter.svg" alt="">
+                </li>
+                <li>
+                    <img src="images/logo_linkedin.svg" alt="">
+                </li>
+            </ul>
+        </section>
+    </footer>
+</body>
+
+</html>
