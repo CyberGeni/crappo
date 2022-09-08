@@ -13,16 +13,52 @@
     
     <!-- TailwindCSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        .card:hover h2 {
+            color: white;
+        }
+        .card:hover sup {
+            color: white;
+            opacity: 0.8;
+        }
+        .card:hover .blueButton {
+            display: flex;
+        }
+        .card:hover .whiteButton {
+            border: none;
+            width: 2em;
+            height: 2em;
+            top: 0.5em;
+            right: 0.5em;
+        }
+        .visa:hover {
+            filter: invert(13%) sepia(76%) saturate(2104%) hue-rotate(222deg) brightness(0%) contrast(101%);
+        }
+        .bitcoin:hover {
+            filter: invert(57%) sepia(75%) saturate(1353%) hue-rotate(9deg) brightness(120%) contrast(104%);
+        }
+        .mastercard:hover {
+            filter: invert(12%) sepia(68%) saturate(6469%) hue-rotate(345deg) brightness(130%) contrast(116%);
+        }
+        .facebook:hover {
+            filter: invert(35%) sepia(78%) saturate(584%) hue-rotate(183deg) brightness(40%) contrast(80%);
+        }
+        .instagram:hover {
+            filter: invert(28%) sepia(15%) saturate(6610%) hue-rotate(254deg) brightness(99%) contrast(96%);
+        }
+        .youtube:hover {
+            filter: invert(96%) sepia(97%) saturate(7486%) hue-rotate(359deg) brightness(180%) contrast(102%);
+        }
+        .twitter:hover {
+            filter: invert(47%) sepia(78%) saturate(1274%) hue-rotate(176deg) brightness(98%) contrast(94%);
+        }
+        .linkedin:hover {
+            filter: invert(23%) sepia(98%) saturate(2047%) hue-rotate(183deg) brightness(76%) contrast(101%);
+        }
+    </style>
 </head>
-<style>
-    .card:hover h2 {
-        color: white;
-    }
-    .card:hover sup {
-        color: white;
-        opacity: 0.8;
-    }
-</style>
+
 <body class="bg-[#0D0D2B] font-['Rubik']">
 
     <header class="text-white flex flex-row items-center justify-between mx-8 sm:mx-9 my-8 md:my-12 md:mx-14 lg:mx-16">
@@ -118,26 +154,41 @@
                 </div>
             </form>
 
-            <div onmouseover="handleMouseOver()" id="cryptocoins" class="px-8 sm:px-9 py-8 md:py-12 md:px-14 lg:px-16 bg-white text-[#828282] mt-[-11em] ">
+            <div class="px-8 sm:px-9 py-8 md:py-12 md:px-14 lg:px-16 bg-white text-[#828282] mt-[-11em] ">
                 <h1 class="text-4xl md:w-2/3 mx-auto text-center text-black font-semibold mt-60 mb-12">Trade securely and market the high growth cryptocurrencies.</h1>
-                <div class="md:grid md:grid-cols-3 max-w-6xl mx-auto gap-9 content-between justify-between">
-                    <div class="card flex flex-col justify-between items-between content-between heading text-center mx-auto space-y-5 m-4 p-5 max-w-xl hover:bg-[#2B076E] hover:text-white transition-all rounded-xl">
+                <div class="md:grid md:grid-cols-3 max-w-6xl mx-auto gap-8 space-y-16 sm:space-y-0 content-start justify-start">
+                    <div class="card  md:h-96 relative flex flex-col justify-start items-between content-between heading text-center mx-auto space-y-6 p-5 max-w-xl hover:bg-[#2B076E] hover:text-white transition-all rounded-xl">
                         <img class="mx-auto" src="images/logo_bitcoin.svg" alt="">
                         <h2 class="heading text-black text-xl font-semibold">Bitcoin<span class="text-xs text-[#828282] font-normal ml-2">BTC</span></h2>
                         <p class="w-3/4 max-w-sm mx-auto">Digital currency in which a record of transactions is maintained.</p>
-                        <button class="animatedButton w-fit mx-auto flex items-center bg-[#3671E9] rounded-full px-5 py-3 text-white">Start mining<span class="flex items-center justify-center bg-white rounded-full w-5 h-5 ml-2""><img src="images/arrow-right.svg" alt=""></span></button>
+                        <div class="relative w-fit mx-auto transition-all">
+                            <button class="blueButton hidden w-fit mx-auto flex items-center bg-[#3671E9] rounded-full px-5 py-3 text-white">Start Mining &nbsp; &nbsp; &nbsp;</button>
+                            <span class="whiteButton border-2 border-[#3671E9] absolute top-[-8] flex items-center justify-center bg-white rounded-full w-10 h-10 ml-[-1em]">
+                                <img src="images/arrow-right.svg" alt="">
+                            </span>
+                        </div>
                     </div>
-                    <div class="flex flex-col justify-between card text-center mx-auto space-y-2 m-4 p-5 max-w-xl hover:bg-[#2B076E] hover:text-white transition-all rounded-xl">
+                    <div class="card  md:h-96 relative flex flex-col justify-start card text-center mx-auto space-y-6 m-4 p-5 max-w-xl hover:bg-[#2B076E] hover:text-white transition-all rounded-xl">
                         <img class="mx-auto" src="images/logo_ethereum.svg" alt="">
                         <h2 class="heading text-black text-xl font-semibold">Ethereum<span class="text-xs text-[#828282] font-normal ml-2">ETH</span></h2>
                         <p class="w-3/4 mx-auto">Blockchain technology to  create and run decentralized digital applications.</p>
-                        <button class="animatedButton w-fit mx-auto flex items-center bg-[#3671E9] rounded-full px-5 py-3 text-white">Start mining<span class="flex items-center justify-center bg-white rounded-full w-5 h-5 ml-2""><img src="images/arrow-right.svg" alt=""></span></button>
+                        <div class="relative w-fit mx-auto transition-all">
+                            <button class="blueButton hidden w-fit mx-auto flex items-center bg-[#3671E9] rounded-full px-5 py-3 text-white">Start Mining &nbsp; &nbsp; &nbsp;</button>
+                            <span class="whiteButton border-2 border-[#3671E9] absolute left-auto mx-auto right-auto flex items-center justify-center bg-white rounded-full w-10 h-10 ml-[-1em]">
+                                <img src="images/arrow-right.svg" alt="">
+                            </span>
+                        </div>
                     </div>
-                    <div class="card flex flex-col justify-between content-between heading text-center mx-auto space-y-2 m-4 p-5 max-w-xl hover:bg-[#2B076E] hover:text-white transition-all rounded-xl">
+                    <div class="card  md:h-96 relative flex flex-col justify-start content-between heading text-center mx-auto space-y-6 m-4 p-5 max-w-xl hover:bg-[#2B076E] hover:text-white transition-all rounded-xl">
                         <img class="mx-auto" src="images/logo_litecoin.svg" alt="">
                         <h2 class="heading text-black text-xl font-semibold">Litecoin<span class="text-xs text-[#828282] font-normal ml-2">LTC</span></h2>
                         <p class="w-3/4 mx-auto">Cryptocurrency that enables instant payment to anyone in the world.</p>
-                        <button class="animatedButton w-fit mx-auto flex items-center bg-[#3671E9] rounded-full px-5 py-3 text-white">Start mining<span class="flex items-center justify-center bg-white rounded-full w-5 h-5 ml-2""><img src="images/arrow-right.svg" alt=""></span></button>
+                        <div class="relative w-fit mx-auto transition-all">
+                            <button class="blueButton hidden w-fit mx-auto flex items-center bg-[#3671E9] rounded-full px-5 py-3 text-white">Start Mining &nbsp; &nbsp; &nbsp;</button>
+                            <span class="whiteButton border-2 border-[#3671E9] absolute left-auto mx-auto right-auto flex items-center justify-center bg-white rounded-full w-10 h-10 ml-[-1em]">
+                                <img src="images/arrow-right.svg" alt="">
+                            </span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -147,25 +198,24 @@
         <section class="bg-[#2B076E] text-white py-20">
             <h1 class="text-center text-4xl md:text-5xl font-bold md:w-2/3 my-8 mx-10 md:mx-auto">Market sentiments, portfolio, and run the infrastructure of your choice</h1>
             <div class="md:space-y-12">
-                <div class="flex flex-col md:items-center md:justify-between  md:flex-row-reverse md:my-12">
-                    <div class="md:w-full mx-12">
-                        <img class="md:ml-[-2em]" src="images/bitcoin-chart.png" alt="">
+                <div class="flex flex-col md:items-center md:justify-evenly md:w-full  md:flex-row-reverse">
+                    <div class="md:ml-5 md:ml-[-5em]">
+                        <img class="w-3/4 mx-12 md:max-w-lg" src="images/bitcoin-chart.png" alt="">
                     </div>
-                    <div class="mx-12 md:mx-0 my-16 md:my-20 md:ml-20 space-y-4 md:space-y-7 ">
+                    <div class="mx-12 md:mx-16 my-16 md:my-20 md:ml-20 max-w-xl space-y-7 ">
                         <h2 class="text-4xl font-medium">Invest Smart</h2>
-                        <p class="md:w-2/3 md:text-lg">Get full statistic information about the behaviour of buyers and sellers will help you make the decision.</p>
+                        <p class="w-2/3 md:text-lg">Get full statistic information about the behaviour of buyers and sellers will help you to make the decision.</p>
                         <button class="bg-[#3671E9] rounded-full px-6 md:px-8 md:py-4 py-3 my-5">Learn More</button>
-                    </div>
-                    
+                    </div>     
                 </div>
                 <div class="flex flex-col md:flex-row md:items-center md:gap-1 ">
-                    <div class="md:w-full mx-12 md:mx-auto md:w-auto md:ml-0 md:mr-10">
+                    <div class="md:w-full mx-12 md:mx-auto md:w-auto md:ml-0 md:mr-6">
                         <img src="images/detailed-statistic.svg" alt="">
                     </div>
                     
                     <div class="mx-12 my-16 space-y-4 md:space-y-7 md:my-20">
                         <h2 class="text-4xl font-medium">Detailed Statistics</h2>
-                        <p class="md:w-2/3 md:text-lg">View all mining related infromation in realtime, at any point at any location and decide which polls you want to mine in.</p>
+                        <p class="md:max-w-xl md:text-lg">View all mining related infromation in realtime, at any point at any location and decide which polls you want to mine in.</p>
                         <button class="bg-[#3671E9] rounded-full px-6 md:px-8 md:py-4 py-3 my-5">Learn More</button>
                     </div>
                 </div>
@@ -197,14 +247,14 @@
     </main>
 
     <footer class="mx-12 md:mx-20 p-y-8 md:py-16 text-white">
-        <section>
-            <div>
+        <section class="md:grid md:grid-cols-4 md:auto-cols-fr md:gap-8">
+            <div class="flex items-center h-fit space-x-3">
                 <img src="images/Logo.svg">
-                <span>CRAPPO</span>
+                <span class="text-xl font-bold">CRAPPO</span>
             </div>
             <div>
-                <ul>
-                    <li>Quick Link</li>
+                <ul class="space-y-2 my-6 md:my-0">
+                    <li class="text-xl font-medium">Quick Link</li>
                     <li>Home</li>
                     <li>Products</li>
                     <li>About</li>
@@ -213,8 +263,8 @@
                 </ul>
             </div>
             <div>
-                <ul>
-                    <li>Resources</li>
+                <ul class="space-y-2 my-6 md:my-0">
+                    <li class="text-xl font-medium">Resources</li>
                     <li>Download Whitepaper</li>
                     <li>Smart token</li>
                     <li>Blockchain Explorer</li>
@@ -223,49 +273,38 @@
                 </ul>
             </div>
             <div>
-                <h2>We accept the following payment systems</h2>
-                <div>
-                    <img src="images/logo_visa.svg" alt="">
-                    <img src="images/logo_mastercard.svg" alt="">
-                    <img src="images/logo_bitcoin_white.svg" alt="">
+                <h2 class="text-2xl font-medium">We accept the following payment systems</h2>
+                <div class="flex space-x-2 my-6">
+                    <img class="visa bg-[#E0E0E010] opacity-75 rounded-lg px-4 py-2 md:w-16 lg:w-auto" src="images/logo_visa.svg" alt="">
+                    <img class="mastercard bg-[#E0E0E010] opacity-75 rounded-lg px-4 py-2 md:w-16 lg:w-auto" src="images/logo_mastercard.svg" alt="">
+                    <img class="bitcoin bg-[#E0E0E010] opacity-75 rounded-lg px-4 py-2 md:w-16 lg:w-auto"  src="images/logo_bitcoin_white.svg" alt="">
+                    
                 </div>
             </div>
         </section>
-        <section class="flex flex-col md:flex-row justify-center md:justify-between">
+        <section class="flex flex-col md:flex-row justify-center md:justify-between md:mt-16">
 
             <p class="text-center md:text-right">&copy;2021 CRAPPO. All rights reserved</p>
 
-            <ul class="flex space-x-4 items-center mx-auto my-8 md:mx-0">
+            <ul class="flex space-x-4 md:space-x-8 items-center mx-auto my-8 md:my-0 md:mx-0">
                 <li>
-                    <img src="images/logo_facebook.svg" alt="">
+                    <img class="facebook" src="images/logo_facebook.svg" alt="">
                 </li>
                 <li>
-                    <img src="images/logo_instagram.svg" alt="">
+                    <img class="instagram" src="images/logo_instagram.svg" alt="">
                 </li>
                 <li>
-                    <img src="images/logo_youtube.svg" alt="">
+                    <img class="youtube" src="images/logo_youtube.svg" alt="">
                 </li>
                 <li>
-                    <img src="images/logo_twitter.svg" alt="">
+                    <img class="twitter" src="images/logo_twitter.svg" alt="">
                 </li>
                 <li>
-                    <img src="images/logo_linkedin.svg" alt="">
+                    <img class="linkedin" src="images/logo_linkedin.svg" alt="">
                 </li>
             </ul>
         </section>
     </footer>
-
-
-    <script>
-        let crypto = document.getElementById('cryptocoins')
-        let heading = document.getElementById('heading')
-        let buttons = document.getElementById('')
-        function handleMouseOver() {
-            for (const element of heading) {
-                heading.style.color = 'green';
-            }
-        }
-    </script>
 </body>
-0
+
 </html>
