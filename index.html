@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CRAPPO</title>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script> 
     
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,6 +14,8 @@
     
     <!-- TailwindCSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
+
+    
 
     <style>
         .card:hover h2 {
@@ -81,8 +84,8 @@
 
     <main>
         <!-- hero -->
-        <section class="mx-8 sm:mx-9 my-8 lg:h-[75vh] md:items-center md:my-12 md:mx-14 lg:mx-16 md:flex md:flex-row-reverse ">
-            <div>
+        <section data-aos="fade-up" class="mx-8 sm:mx-9 my-8 lg:h-[75vh] md:items-center md:my-12 md:mx-14 lg:mx-16 md:flex md:flex-row-reverse ">
+            <div data-aos="fade-up">
                 <img class="w-4/5 lg:w-3/4 mx-auto" src="images/hero_image.svg" alt="">
             </div>
             <div class="text-white md:w-1/2 md:space-y-8">
@@ -96,32 +99,32 @@
         <!-- about -->
         <section class="mx-8 sm:mx-9 my-8 md:my-12 md:mx-14 lg:mx-16">
             <!-- stats -->
-            <div class="text-white my-16 space-y-10 md:justify-around md:flex md:space-y-0 md:gap-12">
-                <div class="flex items-center my-3">
+            <div data-aos="fade-up" class="text-white my-16 space-y-10 md:justify-around md:flex md:space-y-0 md:gap-12">
+                <div data-aos="fade-up" class="flex items-center my-3">
                     <img src="images/chart_icon.svg" alt="">
                     <div class="ml-4">
-                        <h4 class="text-3xl font-semibold">$30B</h4>
+                        <h4 class="text-3xl font-semibold">$<span class="currency">30</span>B</h4>
                         <p>Digital Currency Exchanged</p>
                     </div>
                 </div>
                 <div class="flex items-center my-3">
                     <img src="images/user-icon.svg" alt="">
                     <div class="ml-4">
-                        <h4 class="text-3xl font-semibold">10M+</h4>
+                        <h4 class="text-3xl font-semibold"><span class="investors">10</span>M+</h4>
                         <p>Trusted Wallets Investor</p>
                     </div>
                 </div>
                 <div class="flex items-center my-3">
                     <img src="images/earth_icon.svg" alt="">
                     <div class="ml-4">
-                        <h4 class="text-3xl font-semibold">195</h4>
+                        <h4 class="countries text-3xl font-semibold">195</h4>
                         <p>Countries Supported</p>
                     </div>
                 </div>
             </div>
 
             <!-- why you should use crappo -->
-            <div class="text-white  md:flex md:items-center md:gap-24">
+            <div data-aos="fade-up" class="text-white  md:flex md:items-center md:gap-24">
                 <img class="w-4/5 md:w-1/2 mx-auto my-8" src="images/why_image.svg" alt="">
                 <div>
                     <h2 class="text-4xl md:text-5xl md:leading-normal font-semibold my-4">Why you should use CRAPPO</h2>
@@ -305,6 +308,12 @@
             </ul>
         </section>
     </footer>
+
+    <script>
+        AOS.init({
+            duration: 1200,
+        })
+    </script>
 </body>
 
 </html>
