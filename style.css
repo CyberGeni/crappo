@@ -1,67 +1,41 @@
-
-/*! locomotive-scroll v4.1.3 | MIT License | https://github.com/locomotivemtl/locomotive-scroll */
-html.has-scroll-smooth {
-  overflow: hidden; }
-
-html.has-scroll-dragging {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none; }
-
-.has-scroll-smooth body {
-  overflow: hidden; }
-
-.has-scroll-smooth [data-scroll-container] {
-  min-height: 100vh; }
-
-[data-scroll-direction="horizontal"] [data-scroll-container] {
-  height: 100vh;
-  display: inline-block;
-  white-space: nowrap; }
-
-[data-scroll-direction="horizontal"] [data-scroll-section] {
-  display: inline-block;
-  vertical-align: top;
-  white-space: nowrap;
-  height: 100%; }
-
-.c-scrollbar {
-  position: absolute;
-  right: 0;
-  top: 0;
-  width: 11px;
-  height: 100%;
-  transform-origin: center right;
-  transition: transform 0.3s, opacity 0.3s;
-  opacity: 0; }
-  .c-scrollbar:hover {
-    transform: scaleX(1.45); }
-  .c-scrollbar:hover, .has-scroll-scrolling .c-scrollbar, .has-scroll-dragging .c-scrollbar {
-    opacity: 1; }
-  [data-scroll-direction="horizontal"] .c-scrollbar {
-    width: 100%;
-    height: 10px;
-    top: auto;
-    bottom: 0;
-    transform: scaleY(1); }
-    [data-scroll-direction="horizontal"] .c-scrollbar:hover {
-      transform: scaleY(1.3); }
-
-.c-scrollbar_thumb {
-  position: absolute;
-  top: 0;
-  right: 0;
-  background-color: black;
-  opacity: 0.5;
-  width: 7px;
-  border-radius: 10px;
-  margin: 2px;
-  cursor: -webkit-grab;
-  cursor: grab; }
-  .has-scroll-dragging .c-scrollbar_thumb {
-    cursor: -webkit-grabbing;
-    cursor: grabbing; }
-  [data-scroll-direction="horizontal"] .c-scrollbar_thumb {
-    right: auto;
-    bottom: 0; }
+    .card:hover h2 {
+        color: white;
+    }
+    .card:hover sup {
+        color: white;
+        opacity: 0.8;
+    }
+    .card:hover .blueButton {
+        display: flex;
+    }
+    .card:hover .whiteButton {
+        border: none;
+        width: 2em;
+        height: 2em;
+        top: 0.5em;
+        right: 0.5em;
+    }
+    .visa:hover {
+        filter: invert(13%) sepia(76%) saturate(2104%) hue-rotate(222deg) brightness(0%) contrast(101%);
+    }
+    .bitcoin:hover {
+        filter: invert(57%) sepia(75%) saturate(1353%) hue-rotate(9deg) brightness(120%) contrast(104%);
+    }
+    .mastercard:hover {
+        filter: invert(12%) sepia(68%) saturate(6469%) hue-rotate(345deg) brightness(130%) contrast(116%);
+    }
+    .facebook:hover {
+        filter: invert(35%) sepia(78%) saturate(584%) hue-rotate(183deg) brightness(40%) contrast(80%);
+    }
+    .instagram:hover {
+        filter: invert(28%) sepia(15%) saturate(6610%) hue-rotate(254deg) brightness(99%) contrast(96%);
+    }
+    .youtube:hover {
+        filter: invert(96%) sepia(97%) saturate(7486%) hue-rotate(359deg) brightness(180%) contrast(102%);
+    }
+    .twitter:hover {
+        filter: invert(47%) sepia(78%) saturate(1274%) hue-rotate(176deg) brightness(98%) contrast(94%);
+    }
+    .linkedin:hover {
+        filter: invert(23%) sepia(98%) saturate(2047%) hue-rotate(183deg) brightness(76%) contrast(101%);
+    }

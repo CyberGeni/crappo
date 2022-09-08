@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>CRAPPO</title>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script> 
+    
     
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,51 +16,10 @@
     <!-- TailwindCSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
 
-    
+    <!-- AOS Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-    <style>
-        .card:hover h2 {
-            color: white;
-        }
-        .card:hover sup {
-            color: white;
-            opacity: 0.8;
-        }
-        .card:hover .blueButton {
-            display: flex;
-        }
-        .card:hover .whiteButton {
-            border: none;
-            width: 2em;
-            height: 2em;
-            top: 0.5em;
-            right: 0.5em;
-        }
-        .visa:hover {
-            filter: invert(13%) sepia(76%) saturate(2104%) hue-rotate(222deg) brightness(0%) contrast(101%);
-        }
-        .bitcoin:hover {
-            filter: invert(57%) sepia(75%) saturate(1353%) hue-rotate(9deg) brightness(120%) contrast(104%);
-        }
-        .mastercard:hover {
-            filter: invert(12%) sepia(68%) saturate(6469%) hue-rotate(345deg) brightness(130%) contrast(116%);
-        }
-        .facebook:hover {
-            filter: invert(35%) sepia(78%) saturate(584%) hue-rotate(183deg) brightness(40%) contrast(80%);
-        }
-        .instagram:hover {
-            filter: invert(28%) sepia(15%) saturate(6610%) hue-rotate(254deg) brightness(99%) contrast(96%);
-        }
-        .youtube:hover {
-            filter: invert(96%) sepia(97%) saturate(7486%) hue-rotate(359deg) brightness(180%) contrast(102%);
-        }
-        .twitter:hover {
-            filter: invert(47%) sepia(78%) saturate(1274%) hue-rotate(176deg) brightness(98%) contrast(94%);
-        }
-        .linkedin:hover {
-            filter: invert(23%) sepia(98%) saturate(2047%) hue-rotate(183deg) brightness(76%) contrast(101%);
-        }
-    </style>
 </head>
 
 <body class="bg-[#0D0D2B] font-['Rubik']">
@@ -126,7 +86,7 @@
             <!-- why you should use crappo -->
             <div data-aos="fade-up" class="text-white  md:flex md:items-center md:gap-24">
                 <img class="w-4/5 md:w-1/2 mx-auto my-8" src="images/why_image.svg" alt="">
-                <div>
+                <div data-aos="fade-up">
                     <h2 class="text-4xl md:text-5xl md:leading-normal font-semibold my-4">Why you should use CRAPPO</h2>
                     <p class="my-1 md:my-2 md:text-xl md:w-10/12">Experience the next generation cryptocurrency platform. No financial borders, extra fees, and fake reviews.</p>
                     <button class="bg-[#3671E9] rounded-full px-6 md:px-8 md:py-4 py-3 my-5">Learn More</button>
@@ -136,9 +96,9 @@
 
         <!-- check how much you can earn-->
         <section class="text-white pt-12">
-            <h1 class="font-semibold text-4xl text-center mx-10 my-5">Check how much you can earn</h1>
-            <p class="text-center md:text-xl my-4 md:w-1/2 md:my-10 mx-10 md:mx-auto ">Let's check your hash rate to see how much you will earn today, Exercitation veniam consequat sunt nostrud amet.</p>
-            <form class="bg-white rounded-xl w-10/12 md:w-2/3 mx-auto text-black p-8 shadow-md relative" action="">
+            <h1 data-aos="fade-up" class="font-semibold text-4xl text-center mx-10 my-5">Check how much you can earn</h1>
+            <p data-aos="fade-up" class="text-center md:text-xl my-4 md:w-1/2 md:my-10 mx-10 md:mx-auto ">Let's check your hash rate to see how much you will earn today, Exercitation veniam consequat sunt nostrud amet.</p>
+            <form data-aos="fade-up" class="bg-white rounded-xl w-10/12 md:w-2/3 mx-auto text-black p-8 shadow-md relative" action="">
                 <div class="flex w-full items-center wrap border-1 border-black mb-8">
                     <input class="border-b-2 w-4/5  mr-1 h-fit" type="number" name="hashRate" placeholder="Enter your hash rate">
                     <select class="border-b-2 w-1/5 mr-2 h-fit" name="selectHashRate" id="">
@@ -160,7 +120,7 @@
             <div class="px-8 sm:px-9 py-8 md:py-12 md:px-14 lg:px-16 bg-white text-[#828282] mt-[-11em] ">
                 <h1 class="text-4xl md:w-2/3 mx-auto text-center text-black font-semibold mt-60 mb-12">Trade securely and market the high growth cryptocurrencies.</h1>
                 <div class="md:grid md:grid-cols-3 max-w-6xl mx-auto gap-8 space-y-16 sm:space-y-0 content-start justify-start">
-                    <div class="card  md:h-96 relative flex flex-col justify-start items-between content-between heading text-center mx-auto space-y-6 p-5 max-w-xl hover:bg-[#2B076E] hover:text-white transition-all rounded-xl">
+                    <div data-aos="fade-up" class="card  md:h-96 relative flex flex-col justify-start items-between content-between heading text-center mx-auto space-y-6 p-5 max-w-xl hover:bg-[#2B076E] hover:text-white transition-all rounded-xl">
                         <img class="mx-auto" src="images/logo_bitcoin.svg" alt="">
                         <h2 class="heading text-black text-xl font-semibold">Bitcoin<span class="text-xs text-[#828282] font-normal ml-2">BTC</span></h2>
                         <p class="w-3/4 max-w-sm mx-auto">Digital currency in which a record of transactions is maintained.</p>
@@ -171,7 +131,7 @@
                             </span>
                         </div>
                     </div>
-                    <div class="card  md:h-96 relative flex flex-col justify-start card text-center mx-auto space-y-6 m-4 p-5 max-w-xl hover:bg-[#2B076E] hover:text-white transition-all rounded-xl">
+                    <div data-aos="fade-up" class="card  md:h-96 relative flex flex-col justify-start card text-center mx-auto space-y-6 m-4 p-5 max-w-xl hover:bg-[#2B076E] hover:text-white transition-all rounded-xl">
                         <img class="mx-auto" src="images/logo_ethereum.svg" alt="">
                         <h2 class="heading text-black text-xl font-semibold">Ethereum<span class="text-xs text-[#828282] font-normal ml-2">ETH</span></h2>
                         <p class="w-3/4 mx-auto">Blockchain technology to  create and run decentralized digital applications.</p>
@@ -182,7 +142,7 @@
                             </span>
                         </div>
                     </div>
-                    <div class="card  md:h-96 relative flex flex-col justify-start content-between heading text-center mx-auto space-y-6 m-4 p-5 max-w-xl hover:bg-[#2B076E] hover:text-white transition-all rounded-xl">
+                    <div data-aos="fade-up" class="card  md:h-96 relative flex flex-col justify-start content-between heading text-center mx-auto space-y-6 m-4 p-5 max-w-xl hover:bg-[#2B076E] hover:text-white transition-all rounded-xl">
                         <img class="mx-auto" src="images/logo_litecoin.svg" alt="">
                         <h2 class="heading text-black text-xl font-semibold">Litecoin<span class="text-xs text-[#828282] font-normal ml-2">LTC</span></h2>
                         <p class="w-3/4 mx-auto">Cryptocurrency that enables instant payment to anyone in the world.</p>
@@ -198,35 +158,35 @@
         </section>
 
         <!-- features -->
-        <section class="bg-[#2B076E] text-white py-20">
-            <h1 class="text-center text-4xl md:text-5xl font-bold md:w-2/3 my-8 mx-10 md:mx-auto">Market sentiments, portfolio, and run the infrastructure of your choice</h1>
+        <section class="overflow-x-hidden bg-[#2B076E] text-white py-20">
+            <h1 data-aos="fade-up" class="text-center text-4xl md:text-5xl font-bold md:w-2/3 my-8 mx-10 md:mx-auto">Market sentiments, portfolio, and run the infrastructure of your choice</h1>
             <div class="md:space-y-12">
                 <div class="flex flex-col md:items-center md:justify-evenly md:w-full  md:flex-row-reverse">
                     <div class="md:ml-5 md:ml-[-5em]">
-                        <img class="w-3/4 mx-12 md:max-w-lg" src="images/bitcoin-chart.png" alt="">
+                        <img data-aos="fade-left" class="w-3/4 mx-12 md:max-w-lg" src="images/bitcoin-chart.png" alt="">
                     </div>
-                    <div class="mx-12 md:mx-16 my-16 md:my-20 md:ml-20 max-w-xl space-y-7 ">
-                        <h2 class="text-4xl font-medium">Invest Smart</h2>
+                    <div data-aos="fade-right" class="mx-12 md:mx-16 my-16 md:my-20 md:ml-20 max-w-xl space-y-7 ">
+                        <h2  class="text-4xl font-medium">Invest Smart</h2>
                         <p class="w-2/3 md:text-lg">Get full statistic information about the behaviour of buyers and sellers will help you to make the decision.</p>
                         <button class="bg-[#3671E9] rounded-full px-6 md:px-8 md:py-4 py-3 my-5">Learn More</button>
                     </div>     
                 </div>
                 <div class="flex flex-col md:flex-row md:items-center md:gap-1 ">
-                    <div class="md:w-full mx-12 md:mx-auto md:w-auto md:ml-0 md:mr-6">
+                    <div data-aos="fade-down" class="md:w-full mx-12 md:mx-auto md:w-auto md:ml-0 md:mr-6">
                         <img src="images/detailed-statistic.svg" alt="">
                     </div>
                     
-                    <div class="mx-12 my-16 space-y-4 md:space-y-7 md:my-20">
+                    <div data-aos="fade-left" class="mx-12 my-16 space-y-4 md:space-y-7 md:my-20">
                         <h2 class="text-4xl font-medium">Detailed Statistics</h2>
                         <p class="md:max-w-xl md:text-lg">View all mining related infromation in realtime, at any point at any location and decide which polls you want to mine in.</p>
                         <button class="bg-[#3671E9] rounded-full px-6 md:px-8 md:py-4 py-3 my-5">Learn More</button>
                     </div>
                 </div>
                 <div class="flex flex-col md:items-center md:justify-between  md:flex-row-reverse">
-                    <div class="w-full md:ml-5">
+                    <div data-aos="fade-right" class="w-full md:ml-5">
                         <img class="md:ml-[-6em] w-11/12 md:w-full" src="images/grow-profit.svg" alt="">
                     </div>
-                    <div class="mx-12 md:mx-16 my-16 md:my-20 md:ml-20 space-y-7 ">
+                    <div data-aos="fade-left" class="mx-12 md:mx-16 my-16 md:my-20 md:ml-20 space-y-7 ">
                         <h2 class="text-4xl font-medium">Grow your profit and track your investments</h2>
                         <p class="w-2/3 md:text-lg">Use advanced analytical tools. Clear TradingView charts let you track current and historical profit investments.</p>
                         <button class="bg-[#3671E9] rounded-full px-6 md:px-8 md:py-4 py-3 my-5">Learn More</button>
@@ -236,7 +196,7 @@
 
         <!-- subscription -->
         <section class="bg-gradient-to-b from-[#2B076E] to-[#0D0D2B] py-8 text-white">    
-            <form class="bg-[#3671E9] rounded-xl p-8 md:p-16 mx-12 md:mx-20 flex flex-col md:flex-row justify-between">
+            <form data-aos="fade-up" class="bg-[#3671E9] rounded-xl p-8 md:p-16 mx-12 md:mx-20 flex flex-col md:flex-row justify-between">
                 <div class="space-y-4">
                     <h1 class="text-3xl font-semibold">Start mining now</h1>
                     <p class="md:w-4/5">Join now with CRAPPO to get the latest news and start mining now</p>
