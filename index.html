@@ -12,8 +12,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap">
     
-    <!-- CountUp.js Library -->
-    <script src="./main.js" ></script>
+    <!-- JavaScript -->
+    <script src="./main.js" defer></script>
 
     <!-- TailwindCSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -24,24 +24,29 @@
 
 </head>
 
-<body class="bg-[#0D0D2B] font-['Rubik']">
+<body id="body" class="bg-[#0D0D2B] font-['Rubik']">
 
-    <header class="text-white flex flex-row items-center justify-between mx-8 sm:mx-9 my-8 md:my-12 md:mx-14 lg:mx-16">
+    <header class=" relative text-white flex flex-row items-center justify-between mx-8 sm:mx-9 my-8 md:my-12 md:mx-14 lg:mx-16">
         <div class="flex items-center">
             <img src="images/Logo.svg" alt="">
             <span class="ml-2 text-xl font-medium">CRAPPO</span>
         </div>
-        <nav class="hidden md:flex items-center">
-            <ul class="flex sm:space-x-4 space-x-6">
-                <li>Products</li>
-                <li>Features</li>
-                <li>About</li>
-                <li>Contact</li>
-                <li class="px-2 pr-5 border-r-2 border-zinc-600">Login</li>
+        <nav id="menu" class="transition-all duration-700 bg-[#0D0D2B] flex flex-col text-center items-center justify-center absolute z-10 mx-auto top-0 right-[100vh] w-screen h-[100vh] md:h-fit md:flex md:items-center">
+            <img id="close-icon" class="md:hidden absolute top-14 right-14 w-6" src="images/close.png" alt="">
+            <ul class="w-fit flex flex-col item-center md:flex-row space-y-5 md:space-y-0 space-x-0">
+                <li class="menu-items">Products</li>
+                <li class="menu-items">Features</li>
+                <li class="menu-items">About</li>
+                <li class="menu-items">Contact</li>
+                <div class="flex items-center">
+                    <li class="px-2 pr-5 border-r-2 border-zinc-600">Login</li>
+                    <button class="w-fit sm:ml-3 ml-5 bg-[#3671E9] h-fit px-4 sm:px-6 py-2 sm:py-2 rounded-full">Register</button>
+                </div>
+                
             </ul>
-            <button class="sm:ml-3 ml-5 bg-[#3671E9] h-fit px-8 sm:px-6 py-3 sm:py-2 rounded-full">Register</button>
+            
         </nav>
-        <img class="md:hidden" src="images/icon_menu.svg" alt="">
+        <img id="hamburger" class="md:hidden" src="images/icon_menu.svg" alt="">
     </header>
 
     <main>
