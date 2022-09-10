@@ -4,7 +4,7 @@ let menuBar = document.getElementById('hamburger')
 let close = document.getElementById('close-icon')
 let menuItems = document.getElementsByClassName('menu-items')
 
-if (window.innerWidth < 768) {
+if (window.innerWidth = 768) {
     function openNavbar() {
         body.classList.add('overflow-hidden')
         menu.classList.add('-right-8')
