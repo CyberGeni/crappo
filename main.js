@@ -7,13 +7,11 @@ let menuItems = document.getElementsByClassName('menu-items')
 if (window.innerWidth = 768) {
     function openNavbar() {
         body.classList.add('overflow-hidden')
-        menu.classList.add('-right-8')
-        menu.classList.remove('right-[100vh]')
+        menu.classList.remove('hidden')
     
     }
     function closeNavbar() {
-        menu.classList.remove('-right-8')
-        menu.classList.add('right-[100vh]')
+        menu.classList.add('hidden')
         body.classList.remove('overflow-hidden')
     }
     
